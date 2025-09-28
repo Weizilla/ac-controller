@@ -50,7 +50,7 @@ class ACController:
         if self.next_check is None or datetime.now() >= self.next_check:
             action = self.get_action()
             self.last_check = datetime.now()
-            self.next_check = datetime.now() + timedelta(milliseconds=CHECK_INTERVAL)
+            self.next_check = datetime.now() + timedelta(seconds=CHECK_INTERVAL)
 
             if action == Action.TURN_ON:
                 self._turn_on()

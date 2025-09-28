@@ -57,7 +57,7 @@ class MyTestCase(unittest.TestCase):
 
             self.controller.get_action.assert_called_once()
 
-            new_now = now + timedelta(milliseconds=CHECK_INTERVAL + 1000)
+            new_now = now + timedelta(seconds=CHECK_INTERVAL + 1)
             frozen_time.move_to(new_now)
 
             self.controller.run_once()
