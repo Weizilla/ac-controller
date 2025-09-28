@@ -8,15 +8,18 @@ from device import Device
 logger = logging.getLogger(__name__)
 logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
 
+
 LOOP_INTERVAL = 60
 CHECK_INTERVAL = 10 * 60
 HIGH_TEMP_THRESHOLD = 80
 LOW_TEMP_THRESHOLD = 75
 
+
 class Action(Enum):
     TURN_ON = "on"
     TURN_OFF = "off"
     NO_OP = "no_op"
+
 
 class ACController:
     def __init__(self, device: Device):
