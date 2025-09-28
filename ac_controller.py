@@ -8,8 +8,8 @@ from device import Device
 logger = logging.getLogger(__name__)
 logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
 
-LOOP_INTERVAL = 60 * 1000
-CHECK_INTERVAL = 10 * 60 * 1000
+LOOP_INTERVAL = 60
+CHECK_INTERVAL = 10 * 60
 HIGH_TEMP_THRESHOLD = 80
 LOW_TEMP_THRESHOLD = 75
 
