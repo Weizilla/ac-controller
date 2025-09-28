@@ -18,7 +18,7 @@ class Action(Enum):
     TURN_OFF = "off"
     NO_OP = "no_op"
 
-class ACController(object):
+class ACController:
     def __init__(self, device: Device):
         self.device = device
         self.last_check = None
