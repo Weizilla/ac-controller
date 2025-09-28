@@ -6,6 +6,7 @@ from ac_controller import ACController, Action
 
 logging.disable()
 
+
 class MyTestCase(unittest.TestCase):
     device = Mock()
     controller = ACController(device)

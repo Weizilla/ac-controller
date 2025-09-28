@@ -16,3 +16,11 @@ class Device(ABC):
     @abstractmethod
     def temperature(self):
         pass
+
+    @abstractmethod
+    def set_lcd_message(self, line_one: str, line_two: str = ""):
+        pass
+
+    @abstractmethod
+    def set_lcd_color(self, color):
+        pass
